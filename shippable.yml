@@ -11,6 +11,6 @@ build:
 
 integrations:
   hub:
-    - integrationName: "shipdeploy"
+    - integrationName: "ecr-integration"
       type: docker
 
