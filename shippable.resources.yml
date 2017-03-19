@@ -1,9 +1,9 @@
 resources:
   - name: pipelines-demo-image
     type: image
-    integration: shipdeploy
+    integration: ecr-integration
     pointer:
-      sourceName: "shippablesamples/samplepipelinesdemo"
+      sourceName: "694082941752.dkr.ecr.us-east-1.amazonaws.com/repo1"
       isPull: false
     seed:
       versionName: "latest"
@@ -18,5 +18,5 @@ resources:
     type: cluster
     integration: aws
     pointer:
-      sourceName : "my-cluster" #name of the cluster to which we are deploying
-      region: "us-west-2"
+      sourceName : "default" #name of the cluster to which we are deploying
+      region: "us-east-1"
