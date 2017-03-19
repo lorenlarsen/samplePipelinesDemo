@@ -11,6 +11,6 @@ build:
 
 integrations:
   hub:
-    - integrationName: "ecr-integration"
+    - integrationName: "pipelinetest"
       type: docker
 
